@@ -1,2 +1,2 @@
-# pemdas_e
+# pemdas-e
 latihan git pemdas
