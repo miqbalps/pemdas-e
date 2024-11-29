@@ -1,1 +1,2 @@
 print('Pasha')
+print('Mahasiswa')
