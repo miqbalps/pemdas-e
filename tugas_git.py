@@ -48,3 +48,7 @@ for i in data_panen.values():
   print(f'Hasil Panen: Padi = {i['hasil_panen']['padi']}, Jagung: {i['hasil_panen']['jagung']}, Kedelai: {i['hasil_panen']['kedelai']}\n')
 
 print()
+
+# 2
+print(f'Hasil panen jagung dari lokasi 2 sebanyak {data_panen['lokasi2']['hasil_panen']['jagung']}')
+print()
