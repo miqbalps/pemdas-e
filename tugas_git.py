@@ -55,3 +55,16 @@ print()
 
 # 3
 print(f'Nama lokasi 3 adalah {data_panen['lokasi3']['nama_lokasi']}')
+print()
+
+# 4 dan 5
+jumlah_padi = []
+jumlah_kedelai = []
+
+for i in data_panen.values():
+  jumlah_padi.append(i['hasil_panen']['padi'])
+  jumlah_kedelai.append(i['hasil_panen']['kedelai'])
+
+print(jumlah_padi)
+print(jumlah_kedelai)
+print()
