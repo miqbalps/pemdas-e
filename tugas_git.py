@@ -52,3 +52,6 @@ print()
 # 2
 print(f'Hasil panen jagung dari lokasi 2 sebanyak {data_panen['lokasi2']['hasil_panen']['jagung']}')
 print()
+
+# 3
+print(f'Nama lokasi 3 adalah {data_panen['lokasi3']['nama_lokasi']}')
