@@ -68,3 +68,10 @@ for i in data_panen.values():
 print(jumlah_padi)
 print(jumlah_kedelai)
 print()
+
+# 6
+for i,j in data_panen.items():
+  if j['hasil_panen']['padi'] > 1300 or j['hasil_panen']['jagung'] > 800:
+    print(f'{i} perlu perhatian khusus')
+  else:
+    print(f'{i} dalam kondisi baik')
