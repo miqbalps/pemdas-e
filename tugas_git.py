@@ -43,6 +43,7 @@ data_panen = {
 }
 
 # 1
+print("No. 1")
 for i in data_panen.values():
   print(f'Nama lokasi: {i['nama_lokasi']}')
   print(f'Hasil Panen: Padi = {i['hasil_panen']['padi']}, Jagung: {i['hasil_panen']['jagung']}, Kedelai: {i['hasil_panen']['kedelai']}\n')
@@ -50,14 +51,17 @@ for i in data_panen.values():
 print()
 
 # 2
+print("No. 2")
 print(f'Hasil panen jagung dari lokasi 2 sebanyak {data_panen['lokasi2']['hasil_panen']['jagung']}')
 print()
 
 # 3
+print("No. 3")
 print(f'Nama lokasi 3 adalah {data_panen['lokasi3']['nama_lokasi']}')
 print()
 
 # 4 dan 5
+print("No. 4 dan 5")
 jumlah_padi = []
 jumlah_kedelai = []
 
@@ -70,6 +74,7 @@ print(jumlah_kedelai)
 print()
 
 # 6
+print("No. 6")
 for i,j in data_panen.items():
   if j['hasil_panen']['padi'] > 1300 or j['hasil_panen']['jagung'] > 800:
     print(f'{i} perlu perhatian khusus')
