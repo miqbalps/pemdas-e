@@ -4,4 +4,4 @@ Nama: Muhammad Iqbal Pasha Al Farabi
 NRP: 152023174
 
 link video tugas DataFrame:
-[text](https://youtu.be/iBT8OlX_Qo4)
+[Tugas DataFrame](https://youtu.be/iBT8OlX_Qo4)
