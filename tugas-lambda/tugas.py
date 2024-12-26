@@ -33,21 +33,23 @@ plt.show()
 
 #4
 df_csv['kategori'] = df_csv.apply(lambda x: 'Segera tanggulangi' if x['jumlah_produksi_sampah'] > 400 else 'Masih aman', axis=1)
-df_csv
+data_per_tahun = df_csv[df_csv['tahun'] == tahun]
+print(data_per_tahun)
 
 #5
 harga_per_ton = 123000
 df_csv['bayaran_sampah_per_hari'] = df_csv.apply(lambda x: x['jumlah_produksi_sampah'] * harga_per_ton, axis=1)
 df_csv['bayaran_sampah_per_tahun'] = df_csv.apply(lambda x: x['bayaran_sampah_per_hari'] * total_hari_per_tahun, axis=1)
-df_csv
+data_per_tahun = df_csv[df_csv['tahun'] == tahun]
+print(data_per_tahun)
 
 #6
 df_csv['pajak'] = df_csv.apply(lambda x: harga_per_ton * 0.5 if x['kategori'] == 'Segera tanggulangi' else 0, axis=1)
 
-data_per_tahun = df_csv[df_csv['kategori'] == 'Segera tanggulangi']
+data_tanggulangi = df_csv[df_csv['kategori'] == 'Segera tanggulangi']
 print('Sampah harus segera ditanggulangi:')
-print(data_per_tahun)
+print(data_tanggulangi)
 
 print('Sampah masih aman:')
-data_per_tahun = df_csv[df_csv['kategori'] == 'Masih aman']
-print(data_per_tahun)
+data_aman = df_csv[df_csv['kategori'] == 'Masih aman']
+print(data_aman)
